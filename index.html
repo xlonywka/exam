@@ -44,15 +44,14 @@
         </ul>
       </section>
       <section class="button">
-        <a href="#" alt="">Learn more -></a>
+        <a href="#">Learn more -></a>
       </section>
       <section>
         <h1>Задание 2</h1>
         <form action="//httpbin.org/post" method="post">
-            <div>
-            <p><label>Город <input type="city" name="city" placeholder="Москва" required></label></p>
+            <p><label>Город <input type="text" name="city" placeholder="Москва" required></label></p>
             <p><label>Дата <input type="date" name="date" required></label></p>
-            <p><label>Направление <select name="choice" required>
+            <p><label>Направление <select name="choice" required></select></label><p>
             <option value="one-direction">В одну сторону</option>
             <option value="both-directions">В обе стороны</option>
             </select><label></p>    
@@ -61,7 +60,7 @@
                     done
                 </span>
             </button>
-            </div>
+        </form>
       </section>
     </main>
     <footer></footer>
