@@ -9,9 +9,30 @@
   background: #0A0C0F;
   color: #FFFFFF;
 }
+
 img{
     position: relative;
 }
+.month-table img{
+    width:100%;  
+}
+.month-table{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+.boost{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+ul {
+    padding: 0; /* Убираем поля */
+    margin-left: 0px; /* Отступ слева */
+  }
+  li {
+    list-style-type: none;
+  }
 main{
     padding: 0px 20px;  
 }
@@ -61,3 +82,16 @@ p a{
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width: 720px) {
+    .month-table{
+        flex-direction: column;
+    }
+    .boost{
+        flex-direction: column;
+    }
+    .month-table img{
+        width:60%;  
+    }
+    .button a{
+    text-align:center}
+ }
